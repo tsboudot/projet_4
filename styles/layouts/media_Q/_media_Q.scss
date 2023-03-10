@@ -1,0 +1,45 @@
+@media screen and (min-width: 992px) 
+{
+    header{
+        height: 326px; 
+    }
+    .fonctionnement-container
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .fonctionnement i{
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+    #RSTConainer
+    {
+        flex-direction: row;
+        justify-content: center;
+        height: 90%;
+        max-height: 450px;
+    }
+    footer
+    {
+    flex-direction: row;
+    height: 114px;
+    width: 100%;
+    justify-content: flex-end;
+    h1
+    {
+        order: 2;
+        margin-right: 85px;
+    }
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 70px;
+        margin-top: 20px;
+        width: 45%;
+        max-width: 850px;
+        min-width: 600px;
+    }
+
+}

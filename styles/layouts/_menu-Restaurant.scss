@@ -1,0 +1,29 @@
+.menu
+{
+    @extend %flex-center;
+    
+    flex-direction: column;
+    background-color: $lightGrey;
+    width: 100%;
+    border-radius: 45px 45px 0px 0px;
+    z-index: 2;
+    h3{
+        @extend %fontS16;
+        @extend %fontW300;
+        text-decoration: underline;
+        color: $darkGrey;
+        margin-left: 18%;
+    }
+    padding-bottom: 25px;
+    .section_menu
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        h4
+        {
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+    
+}

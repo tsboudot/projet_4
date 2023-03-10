@@ -1,0 +1,41 @@
+.localisation{
+    @extend %fontW500;
+    @extend %text-center;
+    @extend %width100;
+    background-color: $grey;
+    color: $darkGrey;
+    height: 30px;
+    justify-content: center;
+    padding-top: 10px;
+}
+.smallIc{
+margin-right: 5px;
+}
+.explor {
+
+    @extend %text-center;
+    background-color: $lightGrey;
+    padding: 20px 5% 25px 5%;
+
+    h2{
+        @extend %fontW700;
+        @extend %fontS24;
+        margin: 0 5%;
+    }
+    p{
+        @extend %fontW300;
+        margin: 0;
+        padding: 2% 5%;
+    }
+}
+input{
+    @extend %fontW700;
+    @extend %fontS16;
+    @extend %text-center;
+    text-decoration: none;
+    border: none;
+    appearance: none;
+    background-color: $grey;
+    color: black;
+
+}

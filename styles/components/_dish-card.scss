@@ -1,0 +1,45 @@
+.dish-card{
+    display: flex;
+    margin: 5px auto;
+    flex-direction: row;
+    width: 65%;
+    min-width: 349px;
+    max-width: 643px;
+    background-color: white;
+    border: 0px solid $darkGrey;
+    border-radius: 25px;
+    position: relative;
+    .prix
+    {   @extend %fontW700;
+        @extend %fontS16;
+        position: absolute;
+        top: 65%;
+        left: 85%;
+    }
+    .dish-infos{
+        width: 100%;
+    }
+    .dish-anim{
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: white;
+    }
+    .check-dish{
+        width: 15%;
+        background-color: $green;
+        height: 100%;
+        position: absolute;
+        left: 85%;
+        z-index: 1;
+        color: white;
+        
+        i
+        {
+         @extend %fontS30;
+        margin: 30px 30px;
+         
+        }
+        
+    }
+}

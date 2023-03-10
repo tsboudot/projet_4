@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $darkGrey;
+    color: white;
+    padding-left: 3%;
+    margin: 0;
+    h1 {
+        @extend %fontW400;
+        @extend %fontS30;
+        @extend %shriklands;
+    }
+    h4{
+        @extend %fontW500;
+        @extend %fontS16;
+        line-height: 2.5em;
+        margin: 5px 0px 0px 0px;
+    }
+    .smallIc{
+        margin-right: 2px;
+    }
+}

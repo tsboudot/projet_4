@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+%flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%text-center{
+    text-align: center;
+}
+%margin-auto{
+    margin: auto;
+}
+%width100{
+    width: 100%
+}
+
+%roboto{
+    font-family: 'Roboto', sans-serif;
+}
+%shriklands{
+    font-family: 'Shrikhand', sans-serif;
+}
+%fontW300 {
+    font-weight: 300;
+}
+%fontW400 {
+    font-weight: 400;
+}
+%fontW500 {
+    font-weight: 500;
+}
+
+%fontW700{
+    font-weight: 700;
+}
+%fontS14{
+    font-size: 14px;
+}
+%fontS16{
+    font-size: 16px;
+}
+
+%fontS18{
+    font-size: 18px;
+}
+
+%fontS24{
+    font-size: 24px;
+}
+%fontS30{
+    font-size: 30px;
+}

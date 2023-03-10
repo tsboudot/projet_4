@@ -1,0 +1,34 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeHolders";
+@import "./components/butons";
+@import "./layouts/header";
+@import "./layouts/research";
+@import"./layouts/fonctionnement";
+@import "./components/cartes";
+@import "./layouts/restaurants";
+@import "./layouts/footer";
+@import "./components/animations.scss";
+@import "./components/puce";
+@import "./components/nouveaute";
+@import "./components/media_Q/_media_Q";
+@import "./layouts/media_Q/_media_Q";
+@import"./components/logo";
+@import "./layouts/menu-Restaurant";
+@import "./components/dish-card";
+@import "./components/dish_animations";
+
+body{
+    background-color: $white;
+    margin: 0 auto;
+    @extend %roboto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+main{
+    min-height: 63vh;
+}
+
+
+
