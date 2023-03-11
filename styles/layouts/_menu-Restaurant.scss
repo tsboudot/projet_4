@@ -25,5 +25,13 @@
             text-decoration: none;
         }
     }
-    
+}
+.headerPhotosRestau
+{
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+
+        z-index: 2;
+        margin-bottom: -25px;
 }
