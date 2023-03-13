@@ -1,6 +1,19 @@
-.dish-anim{
-    
-    &:hover{
-        transform: scaleX(0.85);
+.dish-card
+{
+    &:hover .prix
+{
+    transform: translateX(-75px);
 }
+    &:hover .check-dish
+{
+    opacity: 1;
+} 
 }
+/*.prix
+{
+    transition: transform 450ms ease-in-out;
+}
+.check-dish
+{
+    transition-delay: 450ms;
+}*/

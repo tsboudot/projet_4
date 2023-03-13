@@ -3,20 +3,28 @@ footer{
     flex-direction: column;
     background-color: $darkGrey;
     color: white;
-    padding-left: 3%;
     margin: 0;
     h1 {
         @extend %fontW400;
         @extend %fontS30;
         @extend %shriklands;
+        margin-left: 10px;
     }
     h4{
         @extend %fontW500;
         @extend %fontS16;
         line-height: 2.5em;
-        margin: 5px 0px 0px 0px;
+        margin: 5px 0px px 0px;
     }
     .smallIc{
-        margin-right: 2px;
+        margin-right: 10px;
     }
+    nav{
+        margin-left: 10px;
+    }
+}
+#footer_page
+{
+    top: 147%;
+    width: 100%;
 }
