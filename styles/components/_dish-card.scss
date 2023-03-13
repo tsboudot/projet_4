@@ -1,4 +1,64 @@
-.dish-card{
+.dish-card
+{
+    background-color: white;
+    width: 80%;
+    @extend %flex-center;
+    @extend %text-center;
+    margin: 5px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 13px;
+    height: 69px;
+}
+
+    .dish-anim{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0; 
+        h1{
+            margin: 0;
+            padding: 0;
+            @extend %fontS16;
+            line-height: 17px;
+
+        }
+        p{
+            margin-top: -7px;
+            padding: 0;
+            line-height: 17px;
+            
+        }
+    }
+    .check-dish{
+        
+        margin: 0 -75px 0 0;
+        width: 75px;
+        height: 130%;
+        border-radius: 0 30px 30px 0;
+        color: white;
+        background-color: $green;
+        padding: 0;
+        
+        
+            i
+            {
+             @extend %fontS30;
+            margin: 30px 30px;
+            padding: 0; 
+            }
+        
+    }
+    .prix{
+        position: absolute;
+        top: 65%;
+        left: 85%;
+    }
+
+
+/*.dish-card{
     display: flex;
     margin: 5px auto;
     flex-direction: row;
@@ -40,4 +100,4 @@
         }
         
     }
-}
+}*/

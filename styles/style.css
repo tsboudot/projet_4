@@ -1,13 +1,13 @@
 /* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-.menu, .logo {
+.dish-card, .menu, .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nouveaute, .fonctionnement, input, .explor, .localisation, .fonctionnement button {
+.dish-card, .nouveaute, .fonctionnement, input, .explor, .localisation, .fonctionnement button {
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ footer h1, .logo {
   font-family: "Shrikhand", sans-serif;
 }
 
-.menu h3, .explor p {
+.explor p {
   font-weight: 300;
 }
 
@@ -35,7 +35,7 @@ footer h1 {
   font-weight: 500;
 }
 
-.dish-card .prix, .Restaurants h2, .fonctionnement h2, input, .explor h2 {
+.Restaurants h2, .fonctionnement h2, input, .explor h2 {
   font-weight: 700;
 }
 
@@ -43,7 +43,7 @@ footer h1 {
   font-size: 14px;
 }
 
-.dish-card .prix, .menu h3, footer h4, input, .buttonPink, .fonctionnement button {
+.dish-anim h1, footer h4, input, .buttonPink, .fonctionnement button {
   font-size: 16px;
 }
 
@@ -51,7 +51,7 @@ footer h1 {
   font-size: 24px;
 }
 
-.dish-card .check-dish i, footer h1 {
+.check-dish i, footer h1 {
   font-size: 30px;
 }
 
@@ -353,21 +353,17 @@ span .fa-solid:active {
   width: 100%;
   max-width: 750px;
   margin-bottom: 10px;
-  padding-bottom: 25px;
 }
-.menu h3 {
-  text-decoration: underline;
-  color: #353535;
-  margin-left: 18%;
+.menu .header_restau {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .menu .section_menu {
   width: 100%;
   margin-bottom: 15px;
   align-items: center;
-}
-.menu .section_menu h4 {
-  font-size: 16px;
-  text-decoration: none;
+  justify-content: center;
 }
 
 .headerPhotosRestau {
@@ -380,56 +376,108 @@ span .fa-solid:active {
 }
 
 .dish-card {
-  display: flex;
-  margin: 5px auto;
-  flex-direction: row;
-  width: 65%;
-  min-width: 349px;
-  max-width: 643px;
   background-color: white;
-  border: 0px solid #353535;
+  width: 80%;
+  margin: 5px auto;
   border-radius: 25px;
+  overflow: hidden;
   position: relative;
-  padding-left: 5px;
+  padding-left: 13px;
+  height: 69px;
 }
-.dish-card .prix {
+
+.dish-anim {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+.dish-anim h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 17px;
+}
+.dish-anim p {
+  margin-top: -7px;
+  padding: 0;
+  line-height: 17px;
+}
+
+.check-dish {
+  margin: 0 -75px 0 0;
+  width: 75px;
+  height: 130%;
+  border-radius: 0 30px 30px 0;
+  color: white;
+  background-color: #99E2D0;
+  padding: 0;
+}
+.check-dish i {
+  margin: 30px 30px;
+  padding: 0;
+}
+
+.prix {
   position: absolute;
   top: 65%;
   left: 85%;
 }
-.dish-card .dish-infos {
-  width: 100%;
-}
-.dish-card .check-dish {
-  width: 25%;
-  background-color: #99E2D0;
-  height: 100%;
-  position: absolute;
-  left: 75%;
-  z-index: 1;
-  color: white;
-  opacity: 0;
-  border-radius: 0 25px 25px 0;
-}
-.dish-card .check-dish i {
-  margin: 30px 30px;
-}
 
+/*.dish-card{
+    display: flex;
+    margin: 5px auto;
+    flex-direction: row;
+    width: 65%;
+    min-width: 349px;
+    max-width: 643px;
+    background-color: white;
+    border: 0px solid $darkGrey;
+    border-radius: 25px;
+    position: relative;
+    padding-left: 5px;
+    .prix
+    {   @extend %fontW700;
+        @extend %fontS16;
+        position: absolute;
+        top: 65%;
+        left: 85%;
+    }
+    .dish-infos{
+        width: 100%;
+    }
+
+    .check-dish{
+        width: 25%;
+        background-color: $green;
+        height: 100%;
+        position: absolute;
+        left: 75%;
+        z-index: 1;
+        color: white;
+        opacity: 0;
+        border-radius: 0 25px 25px 0;
+
+        i
+        {
+         @extend %fontS30;
+        margin: 30px 30px;
+
+        }
+
+    }
+}*/
 .dish-card:hover .prix {
   transform: translateX(-75px);
 }
 .dish-card:hover .check-dish {
-  opacity: 1;
+  transform: translateX(-65px);
 }
 
-/*.prix
-{
-    transition: transform 450ms ease-in-out;
+.prix, .check-dish {
+  transition: transform 450ms ease-in-out;
 }
-.check-dish
-{
-    transition-delay: 450ms;
-}*/
+
 body {
   background-color: #FFFFFF;
   margin: 0 auto;

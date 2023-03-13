@@ -9,25 +9,19 @@
     width: 100%;
     max-width: 750px;
     margin-bottom: 10px;
-    h3{
-        @extend %fontS16;
-        @extend %fontW300;
-        text-decoration: underline;
-        color: $darkGrey;
-        margin-left: 18%;
+    .header_restau{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    padding-bottom: 25px;
     .section_menu
     {
         width: 100%;
         margin-bottom: 15px;
-        h4
-        {
-            font-size: 16px;
-            text-decoration: none;
-        }
         align-items: center;
+        justify-content: center;
     }
+
 }
 .headerPhotosRestau
 {

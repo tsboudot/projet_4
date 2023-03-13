@@ -6,14 +6,11 @@
 }
     &:hover .check-dish
 {
-    opacity: 1;
-} 
+    transform: translateX(-65px);
 }
-/*.prix
+}
+.prix, .check-dish
 {
     transition: transform 450ms ease-in-out;
 }
-.check-dish
-{
-    transition-delay: 450ms;
-}*/
+
