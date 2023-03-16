@@ -1,0 +1,31 @@
+@keyframes slide 
+{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1)
+    }
+}
+
+.starters{
+
+    animation: slide 2s 1s;
+    animation: slide .6s;
+  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-fill-mode: both;
+}
+.mainDish{
+
+
+    animation: slide .6s 250ms;
+  
+  animation-fill-mode: both;
+}
+.desserts{
+
+
+    animation: slide .6s 500ms;
+  
+  animation-fill-mode: both;
+}

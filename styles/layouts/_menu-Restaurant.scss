@@ -18,9 +18,31 @@
     {
         width: 100%;
         margin-bottom: 15px;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
+
+        h3
+        {
+            text-align: left;
+            margin-left: 8%;
+        }
+        hr
+        {
+            text-align: left;
+            width: 25px;
+            height: 5px;
+            color: $green;
+            background-color: $green;
+            border: 0px;
+            margin-right: 100%;
+            margin-left: 8%;
+            margin-top: -5px;
+        }
+        .desserts
+        {
+            margin-bottom: 15px;
+        }
     }
+
 
 }
 .headerPhotosRestau

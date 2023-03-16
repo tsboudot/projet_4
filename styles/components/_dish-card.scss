@@ -49,7 +49,7 @@
     .check-dish{
         
         margin: 0 -75px 0 0;
-        padding-right: 10px;
+        padding-right: 20px;
         width: 75px;
         height: 130%;
         border-radius: 0 30px 30px 0;
@@ -61,7 +61,7 @@
             i
             {
              @extend %fontS30;
-            margin: 30px 30px;
+            margin: 30px 45px 0 30px;
             padding: 0; 
             }
         
@@ -72,48 +72,3 @@
         left: 85%;
         @extend %fontW700;
     }
-
-
-/*.dish-card{
-    display: flex;
-    margin: 5px auto;
-    flex-direction: row;
-    width: 65%;
-    min-width: 349px;
-    max-width: 643px;
-    background-color: white;
-    border: 0px solid $darkGrey;
-    border-radius: 25px;
-    position: relative;
-    padding-left: 5px;
-    .prix
-    {   @extend %fontW700;
-        @extend %fontS16;
-        position: absolute;
-        top: 65%;
-        left: 85%;
-    }
-    .dish-infos{
-        width: 100%;
-    }
-
-    .check-dish{
-        width: 25%;
-        background-color: $green;
-        height: 100%;
-        position: absolute;
-        left: 75%;
-        z-index: 1;
-        color: white;
-        opacity: 0;
-        border-radius: 0 25px 25px 0;
-        
-        i
-        {
-         @extend %fontS30;
-        margin: 30px 30px;
-         
-        }
-        
-    }
-}*/

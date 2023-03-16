@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.dish-card, .nouveaute, .fonctionnement, input, .explor, .localisation, .fonctionnement button {
+.dish-card, .nouveaute, .fonctionnement, input, .explor, .localisation, .menubutton, .fonctionnement button {
   text-align: center;
 }
 
@@ -79,6 +79,10 @@ footer h1 {
   border-radius: 25px;
   border: none;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.menubutton {
+  width: 100%;
 }
 
 .logo {
@@ -362,8 +366,25 @@ span .fa-solid:active {
 .menu .section_menu {
   width: 100%;
   margin-bottom: 15px;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+.menu .section_menu h3 {
+  text-align: left;
+  margin-left: 8%;
+}
+.menu .section_menu hr {
+  text-align: left;
+  width: 25px;
+  height: 5px;
+  color: #99E2D0;
+  background-color: #99E2D0;
+  border: 0px;
+  margin-right: 100%;
+  margin-left: 8%;
+  margin-top: -5px;
+}
+.menu .section_menu .desserts {
+  margin-bottom: 15px;
 }
 
 .headerPhotosRestau {
@@ -418,7 +439,7 @@ span .fa-solid:active {
 
 .check-dish {
   margin: 0 -75px 0 0;
-  padding-right: 10px;
+  padding-right: 20px;
   width: 75px;
   height: 130%;
   border-radius: 0 30px 30px 0;
@@ -427,7 +448,7 @@ span .fa-solid:active {
   padding: 0;
 }
 .check-dish i {
-  margin: 30px 30px;
+  margin: 30px 45px 0 30px;
   padding: 0;
 }
 
@@ -437,49 +458,6 @@ span .fa-solid:active {
   left: 85%;
 }
 
-/*.dish-card{
-    display: flex;
-    margin: 5px auto;
-    flex-direction: row;
-    width: 65%;
-    min-width: 349px;
-    max-width: 643px;
-    background-color: white;
-    border: 0px solid $darkGrey;
-    border-radius: 25px;
-    position: relative;
-    padding-left: 5px;
-    .prix
-    {   @extend %fontW700;
-        @extend %fontS16;
-        position: absolute;
-        top: 65%;
-        left: 85%;
-    }
-    .dish-infos{
-        width: 100%;
-    }
-
-    .check-dish{
-        width: 25%;
-        background-color: $green;
-        height: 100%;
-        position: absolute;
-        left: 75%;
-        z-index: 1;
-        color: white;
-        opacity: 0;
-        border-radius: 0 25px 25px 0;
-
-        i
-        {
-         @extend %fontS30;
-        margin: 30px 30px;
-
-        }
-
-    }
-}*/
 .dish-card:hover .prix {
   transform: translateX(-75px);
 }
@@ -492,6 +470,31 @@ span .fa-solid:active {
 
 .prix, .check-dish {
   transition: transform 450ms ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.starters {
+  animation: slide 2s 1s;
+  animation: slide 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+}
+
+.mainDish {
+  animation: slide 0.6s 250ms;
+  animation-fill-mode: both;
+}
+
+.desserts {
+  animation: slide 0.6s 500ms;
+  animation-fill-mode: both;
 }
 
 body {
