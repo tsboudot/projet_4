@@ -392,20 +392,30 @@ span .fa-solid:active {
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
 }
 .dish-anim h1 {
   margin: 0;
   padding: 0;
   line-height: 17px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dish-anim p {
   margin-top: -7px;
   padding: 0;
   line-height: 17px;
+  text-align: left;
+  text-overflow: ellipsis;
 }
 
 .check-dish {
   margin: 0 -75px 0 0;
+  padding-right: 10px;
   width: 75px;
   height: 130%;
   border-radius: 0 30px 30px 0;
@@ -471,7 +481,10 @@ span .fa-solid:active {
   transform: translateX(-75px);
 }
 .dish-card:hover .check-dish {
-  transform: translateX(-65px);
+  transform: translateX(-75px);
+}
+.dish-card:hover .dishName {
+  margin-right: 270px;
 }
 
 .prix, .check-dish {

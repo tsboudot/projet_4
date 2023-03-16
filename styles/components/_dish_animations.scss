@@ -6,8 +6,14 @@
 }
     &:hover .check-dish
 {
-    transform: translateX(-65px);
+    transform: translateX(-75px);
 }
+
+
+    &:hover .dishName
+    {
+        margin-right: 270px;
+    }
 }
 .prix, .check-dish
 {
