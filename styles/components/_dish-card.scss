@@ -21,11 +21,16 @@
         white-space: nowrap;
         overflow: hidden;
         cursor: pointer;
-        h1{
+        .dish-info
+        {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-top: 15px;
+        h4{
             margin: 0;
             padding: 0;
             @extend %fontS16;
-            line-height: 17px;
             text-align: left;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -34,14 +39,13 @@
 
         }
         p{
-            margin-top: -7px;
+            
             padding: 0;
-            line-height: 17px;
             text-align: left;
             text-overflow: ellipsis;
             
         }
-    }
+    }}
     .check-dish{
         
         margin: 0 -75px 0 0;
@@ -66,6 +70,7 @@
         position: absolute;
         top: 65%;
         left: 85%;
+        @extend %fontW700;
     }
 
 

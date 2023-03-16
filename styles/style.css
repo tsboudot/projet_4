@@ -35,7 +35,7 @@ footer h1 {
   font-weight: 500;
 }
 
-.Restaurants h2, .fonctionnement h2, input, .explor h2 {
+.prix, .Restaurants h2, .fonctionnement h2, input, .explor h2 {
   font-weight: 700;
 }
 
@@ -43,7 +43,7 @@ footer h1 {
   font-size: 14px;
 }
 
-.dish-anim h1, footer h4, input, .buttonPink, .fonctionnement button {
+.dish-anim .dish-info h4, footer h4, input, .buttonPink, .fonctionnement button {
   font-size: 16px;
 }
 
@@ -396,19 +396,22 @@ span .fa-solid:active {
   overflow: hidden;
   cursor: pointer;
 }
-.dish-anim h1 {
+.dish-anim .dish-info {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.dish-anim .dish-info h4 {
   margin: 0;
   padding: 0;
-  line-height: 17px;
   text-align: left;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.dish-anim p {
-  margin-top: -7px;
+.dish-anim .dish-info p {
   padding: 0;
-  line-height: 17px;
   text-align: left;
   text-overflow: ellipsis;
 }
