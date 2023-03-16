@@ -1,3 +1,6 @@
+.indexSection
+{
+    width: 100%;
 .Restaurants
 {
     @extend %width100;
@@ -7,6 +10,7 @@
     padding-bottom: 1%;
     height: 350px;
     height: 29%;
+    width: 100%;
     h2
     {
         @extend %fontS24;
@@ -20,4 +24,4 @@
         flex-direction: column;
     }
 }
-
+}

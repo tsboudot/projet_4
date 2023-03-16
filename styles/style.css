@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.Restaurants, .fonctionnement, .localisation, .logo {
+.indexSection .Restaurants, .fonctionnement, .localisation, .logo {
   width: 100%;
 }
 
@@ -35,7 +35,7 @@ footer h1 {
   font-weight: 500;
 }
 
-.prix, .Restaurants h2, .fonctionnement h2, input, .explor h2 {
+.prix, .indexSection .Restaurants h2, .fonctionnement h2, input, .explor h2 {
   font-weight: 700;
 }
 
@@ -47,7 +47,7 @@ footer h1 {
   font-size: 16px;
 }
 
-.Restaurants h2, .fonctionnement h2, .explor h2 {
+.indexSection .Restaurants h2, .fonctionnement h2, .explor h2 {
   font-size: 24px;
 }
 
@@ -157,7 +157,7 @@ input {
 .carteRestaurant {
   height: 251px;
   border-radius: 15px;
-  width: 88%;
+  max-width: 88%;
   width: 335px;
   margin: 5% auto;
   border: solid 1px #F7F7F7;
@@ -195,20 +195,24 @@ input {
   margin-right: 15px;
 }
 
-.Restaurants {
+.indexSection {
+  width: 100%;
+}
+.indexSection .Restaurants {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
   padding-bottom: 1%;
   height: 350px;
   height: 29%;
+  width: 100%;
 }
-.Restaurants h2 {
+.indexSection .Restaurants h2 {
   text-align: start;
   justify-content: flex-start;
   margin-left: 3%;
 }
-.Restaurants .restauContainer {
+.indexSection .Restaurants .restauContainer {
   display: flex;
   flex-direction: column;
 }
@@ -365,7 +369,7 @@ span .fa-solid:active {
 }
 .menu .section_menu {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   overflow: hidden;
 }
 .menu .section_menu h3 {
@@ -384,7 +388,7 @@ span .fa-solid:active {
   margin-top: -5px;
 }
 .menu .section_menu .desserts {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .headerPhotosRestau {
@@ -495,6 +499,48 @@ span .fa-solid:active {
 .desserts {
   animation: slide 0.6s 500ms;
   animation-fill-mode: both;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  opacity: 0.3;
+  z-index: 2;
+  transition: opacity 0.75s, visibility 0.75s;
+  animation: disapear 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.loader::before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #FFFFFF;
+  border-top-color: #99E2D0;
+  border-radius: 50%;
+  animation: loading 1s ease-in-out 1;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes disapear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
 
 body {
