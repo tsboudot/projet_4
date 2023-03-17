@@ -3,6 +3,9 @@
     header{
         height: 326px; 
     }
+    body{
+        height: 100vh;
+    }
     .fonctionnement-container
     {
         flex-direction: row;
@@ -12,12 +15,19 @@
         margin-right: 15px;
         margin-left: 5px;
     }
+    .Restaurants{
+        padding-top: 25px;
+        box-sizing: border-box;
+        height: 51vh;
+min-height: 475px;
+padding-bottom: 25px;
+    }
     #RSTConainer
     {
         flex-direction: row;
         justify-content: center;
         height: 90%;
-        max-height: 450px;
+
     }
     footer
     {

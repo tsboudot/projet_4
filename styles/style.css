@@ -88,12 +88,8 @@ footer h1 {
 .logo {
   position: relative;
   height: 50px;
-  font-weight: 500;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-h1 {
-  font-size: 30px;
+  margin: 0;
 }
 
 .localisation {
@@ -202,9 +198,6 @@ input {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
-  padding-bottom: 1%;
-  height: 350px;
-  height: 29%;
   width: 100%;
 }
 .indexSection .Restaurants h2 {
@@ -229,7 +222,7 @@ footer h1 {
 }
 footer h4 {
   line-height: 2.5em;
-  margin: 5px 0px px 0px;
+  margin: 5px 0px 0px 0px;
 }
 footer .smallIc {
   margin-right: 10px;
@@ -309,6 +302,9 @@ span .fa-solid:active {
   header {
     height: 326px;
   }
+  body {
+    height: 100vh;
+  }
   .fonctionnement-container {
     flex-direction: row;
     justify-content: space-around;
@@ -317,11 +313,17 @@ span .fa-solid:active {
     margin-right: 15px;
     margin-left: 5px;
   }
+  .Restaurants {
+    padding-top: 25px;
+    box-sizing: border-box;
+    height: 51vh;
+    min-height: 475px;
+    padding-bottom: 25px;
+  }
   #RSTConainer {
     flex-direction: row;
     justify-content: center;
     height: 90%;
-    max-height: 450px;
   }
   footer {
     flex-direction: row;
