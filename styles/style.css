@@ -302,7 +302,7 @@ span .fa-solid:active {
   position: absolute;
   top: 19px;
   left: 65%;
-  width: 73px;
+  width: 83px;
   max-width: 33%;
   height: 18px;
 }
@@ -462,6 +462,9 @@ span .fa-solid:active {
   padding: 0;
   text-align: left;
   text-overflow: ellipsis;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .check-dish {
@@ -491,8 +494,8 @@ span .fa-solid:active {
 .dish-card:hover .check-dish {
   transform: translateX(-75px);
 }
-.dish-card:hover .dishName {
-  margin-right: 245px;
+.dish-card:hover .dish-info {
+  margin-right: 225px;
 }
 
 .prix, .check-dish {

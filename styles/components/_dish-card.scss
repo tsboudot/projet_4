@@ -43,6 +43,9 @@
             padding: 0;
             text-align: left;
             text-overflow: ellipsis;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
             
         }
     }}
