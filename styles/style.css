@@ -495,7 +495,7 @@ span .fa-solid:active {
   transform: translateX(-75px);
 }
 .dish-card:hover .dish-info {
-  margin-right: 225px;
+  margin-right: 210px;
 }
 
 .prix, .check-dish {
