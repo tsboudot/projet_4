@@ -1,7 +1,7 @@
 /* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-.dish-card, .menu, .logo {
+.dish-card, .menu, .headerlogo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.indexSection .Restaurants, .fonctionnement, .localisation, .logo {
+.indexSection .Restaurants, .fonctionnement, .localisation, .headerlogo {
   width: 100%;
 }
 
@@ -19,7 +19,7 @@ body, .fonctionnement button {
   font-family: "Roboto", sans-serif;
 }
 
-footer h1, .logo {
+.menu .header_menu, footer h1, .headerlogo {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -35,7 +35,7 @@ footer h1 {
   font-weight: 500;
 }
 
-.prix, .indexSection .Restaurants h2, .fonctionnement h2, input, .explor h2 {
+.prix, .menu .header_menu, .indexSection .Restaurants h2, .fonctionnement h2, input, .explor h2 {
   font-weight: 700;
 }
 
@@ -85,11 +85,26 @@ footer h1 {
   width: 100%;
 }
 
-.logo {
-  position: relative;
-  height: 50px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+.headerlogo {
+  height: 40px;
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+}
+
+.header_restau {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+.header_restau a {
+  margin-left: 45px;
+  margin-top: 10px;
+}
+.header_restau .headerlogo {
+  align-self: auto;
+  margin-right: 45px;
 }
 
 .localisation {
@@ -230,10 +245,15 @@ footer .smallIc {
 footer nav {
   margin-left: 10px;
 }
+footer nav a {
+  text-decoration: none;
+  color: white;
+}
 
 #footer_page {
   top: 147%;
   width: 100%;
+  min-height: 170px;
 }
 
 span .fa-solid {
@@ -299,9 +319,6 @@ span .fa-solid:active {
   }
 }
 @media screen and (min-width: 992px) {
-  header {
-    height: 326px;
-  }
   body {
     height: 100vh;
   }
@@ -364,10 +381,14 @@ span .fa-solid:active {
   max-width: 750px;
   margin-bottom: 10px;
 }
-.menu .header_restau {
+.menu .header_menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  padding-top: 25px;
+  height: 55px;
 }
 .menu .section_menu {
   width: 100%;
@@ -471,7 +492,7 @@ span .fa-solid:active {
   transform: translateX(-75px);
 }
 .dish-card:hover .dishName {
-  margin-right: 270px;
+  margin-right: 245px;
 }
 
 .prix, .check-dish {

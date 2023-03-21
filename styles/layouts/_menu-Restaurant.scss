@@ -9,10 +9,17 @@
     width: 100%;
     max-width: 750px;
     margin-bottom: 10px;
-    .header_restau{
+    .header_menu{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        @extend %shriklands;
+        @extend %fontW700;
+        width: 75%;
+        padding-top: 25px;
+        height: 55px;
+        
     }
     .section_menu
     {

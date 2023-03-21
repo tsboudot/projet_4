@@ -21,10 +21,16 @@ footer{
     }
     nav{
         margin-left: 10px;
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 #footer_page
 {
     top: 147%;
     width: 100%;
+    min-height: 170px;
 }
