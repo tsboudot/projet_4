@@ -3,20 +3,15 @@
         @extend %roboto;
         @extend %fontW500;
         @extend %fontS16;
-        border-radius: 25px;
-        height: 72px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-        text-align: start;
-        padding-left: 10%;
+        
         background-color: $lightGrey;
-        border: none;
-        width: 85%;
-        max-width: 850px;
-        min-width: 240px;
-        margin: 10px 10%;
+        width: 100%;
         position: relative;
         transition: background-color 250ms;
         @extend %text-center;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 
     }
     .buttonPink{
